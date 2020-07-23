@@ -14,13 +14,13 @@ import pandas as pd
 import csv
 from io import StringIO
 
-engine = sqlalchemy.create_engine('mysql+pymysql://root:haneef24@localhost/login')
+engine = sqlalchemy.create_engine('mysql+pymysql://root:xxx@localhost/xxx')
 metadata = MetaData(engine)
 
 app = Flask(__name__, template_folder='template')
 
 app.config['SESSION_TYPE'] = 'memcached'
-app.config['SECRET_KEY'] = 'teste'
+app.config['SECRET_KEY'] = 'xxx'
 
 #session.permanent = True
 app.permanent_session_lifetime = timedelta(seconds=10) # tempo da sessao
